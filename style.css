@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 11px;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    margin: auto;
+    width: 830px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+        "one one two five"
+        "three four four five";
+    gap: 20px;
+}
+
+.testi-box {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 20px 30px 40px 0 rgba(0,0,0,0.1);
+}
+
+.box-one {
+    grid-area: one;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+.box-two {
+    grid-area: two;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.box-three {
+    grid-area: three;
+    background-color: white;
+}
+
+.box-four {
+    grid-area: four;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+.box-five {
+    grid-area: five;
+    background-color: white;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.person-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.status {
+    opacity: 0.6;
+}
+
+.quote-title {
+    margin: 15px 0;
+    font-size: 1.5em;
+    opacity: 0.95;
+}
+
+.quote {
+    opacity: 0.7;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 860px) {
+    .container {
+        margin: 40px auto;
+        width: 87%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, min-content);
+        grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four"
+            "five";
+    }
+}
