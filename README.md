@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/testimonial-grid-section-using-css-grid-and-flexbox-zTCKBw-fs)
+- Live Site URL: [Github Pages](https://mahesa10.github.io/testimonials-grid-section/)
 
 ## My process
 
