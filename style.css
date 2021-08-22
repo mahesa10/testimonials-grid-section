@@ -20,7 +20,7 @@ body {
 
 .container {
     margin: auto;
-    width: 830px;
+    width: 900px;
     height: auto;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -41,6 +41,13 @@ body {
     grid-area: one;
     background-color: hsl(263, 55%, 52%);
     color: white;
+    position: relative;
+}
+
+.quote-icon {
+    position: absolute;
+    right: 60px;
+    top: 0;
 }
 
 .box-two {
@@ -117,5 +124,9 @@ body {
             "three"
             "four"
             "five";
+    }
+
+    .quote-icon {
+        right: 20px;
     }
 }
